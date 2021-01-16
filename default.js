@@ -67,7 +67,6 @@ function readdata() {
   db.collection(user.uid)
     .doc("data")
     .onSnapshot(function (doc) {
-      console.log("Current data: ", doc.data());
       const number_of_items = doc.data();
       document.getElementById("number_of_items").innerText =
         number_of_items.cart;
@@ -97,7 +96,6 @@ firebase.auth().onAuthStateChanged(function (user) {
     photoUrl = user.photoURL;
     emailVerified = user.emailVerified;
     uid = user.uid;
-    console.log(name, email, photoUrl, uid, emailVerified);
     document.getElementById("google").style.display = "none";
     document.getElementById("logout").style.display = "block";
     var src = document.getElementById("userdetails");
@@ -143,11 +141,7 @@ function signinwithgoogle() {
       var token = result.credential.accessToken;
       // The signed-in user info.
       var user = result.user;
-      console.log(user.displayName);
-      console.log(user.email);
-      console.log(user.photoURL);
-      console.log(user.emailVerified);
-      console.log(user.uid);
+
       document.getElementById("google").style.display = "none";
       document.getElementById("logout").style.display = "block";
     })
