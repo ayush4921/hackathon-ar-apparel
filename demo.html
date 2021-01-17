@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JEELIZ VTO WIDGET INTEGRATION DEMO</title>
+    <title>Ararel</title>
     <meta charset='utf-8' />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
@@ -29,10 +29,10 @@
       function main() {
         JEEWIDGET.start({
           sku: 'rayban_aviator_or_vertFlash',
-          searchImageMask: 'images/logo.PNG',
+          searchImageMask: 'https://dazzling-booth-a67405.netlify.app/images/logo.PNG',
           searchImageColor: 0xeeeeee,
           callbackReady: function(){
-            console.log('INFO: JEEWIDGET is ready :)');
+            console.log('INFO: AR is ready :)');
           },
           onError: function(errorLabel){ // this function catches errors, so you can display custom integrated messages
             alert('An error happened. errorLabel =' + errorLabel)
