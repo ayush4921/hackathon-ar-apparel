@@ -22,7 +22,6 @@ function additem() {
 
 function getCheckoutdata() {
   var db = firebase.firestore();
-
   var user = firebase.auth().currentUser;
 
   let first_name = document.getElementById("first_name").value;
@@ -57,6 +56,7 @@ function getCheckoutdata() {
     },
     { merge: true }
   );
+  alert("Ordered Placed!");
 }
 
 function readdata() {
@@ -75,8 +75,11 @@ function readdata() {
           .getElementById("qty")
           .setAttribute("value", number_of_items.cart);
       } catch {}
-      document.getElementById("subtotal").innerText =
-        "$ " + number_of_items.cart * 180;
+      try {
+        document.getElementById("subtotal").innerText =
+          "$ " + number_of_items.cart * 180;
+      } catch (e) {}
+
       try {
         if (number_of_items.cart > 0) {
           document.getElementById("cartitem").style.display = "block";
@@ -106,7 +109,9 @@ firebase.auth().onAuthStateChanged(function (user) {
     img.src = photoUrl;
 
     src.appendChild(img);*/
-    readdata();
+    try {
+      readdata();
+    } catch (e) {}
   } else {
     document.getElementById("google").style.display = "block";
     document.getElementById("logout").style.display = "none";
