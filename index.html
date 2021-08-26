@@ -2,33 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="manifest" href="manifest.json" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title  -->
     <title>Ararel</title>
 
     <!-- Favicon  -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Core Style CSS -->
-    <link rel="stylesheet" href="css/core-style.css">
-    <link rel="stylesheet" href="style.css">
-
-    <script>if ("serviceWorker" in navigator) {
-        // register service worker
-        navigator.serviceWorker.register("service-worker.js");
-      }</script>
+    <link rel="stylesheet" href="css/core-style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        if ("serviceWorker" in navigator) {
+            // register service worker
+            navigator.serviceWorker.register("service-worker.js");
+        }
+    </script>
 </head>
 
 <body>
@@ -42,8 +43,10 @@
                 <div class="col-12">
                     <div class="search-content">
                         <form action="#" method="get">
-                            <input type="search" name="search" id="search" placeholder="Type your keyword...">
-                            <button type="submit"><img src="img/core-img/search.png" alt=""></button>
+                            <input type="search" name="search" id="search" placeholder="Type your keyword..." />
+                            <button type="submit">
+                  <img src="img/core-img/search.png" alt="" />
+                </button>
                         </form>
                     </div>
                 </div>
@@ -54,12 +57,11 @@
 
     <!-- ##### Main Content Wrapper Start ##### -->
     <div class="main-content-wrapper d-flex clearfix" onload="main()">
-
         <!-- Mobile Nav (max width 767px)-->
         <div class="mobile-nav">
             <!-- Navbar Brand -->
             <div class="amado-navbar-brand">
-                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                <a href="index.html"><img src="img/core-img/logo.png" alt="" /></a>
             </div>
             <!-- Navbar Toggler -->
             <div class="amado-navbar-toggler">
@@ -75,34 +77,24 @@
             </div>
             <!-- Logo -->
             <div class="logo">
-                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                <a href="index.html"><img src="img/core-img/logo.png" alt="" /></a>
             </div>
             <!-- Amado Nav -->
             <nav class="amado-nav">
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                  
-                    <li ><a href="cart.html">Cart</a></li>
+                    <li><a href="index.html">Home</a></li>
+
+                    <li class="active"><a href="cart.html">Cart</a></li>
                     <li><a href="checkout.html">Checkout</a></li>
-                    <li id='google' >
-                       <a>Use Google</a>
-                   </li>
-                    <li id='logout' >
-                        <a>Logout</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li ><a id="userdetails"></a></li>
                 </ul>
             </nav>
             <!-- Button Group -->
-            
+
             <!-- Cart Menu -->
             <div class="cart-fav-search mb-100">
-                <a href="cart.html" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span id="number_of_items">0</span></a>
-                <a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Favourite</a>
-                <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> Search</a>
-                
+                <a href="cart.html" class="cart-nav"><img src="img/core-img/cart.png" alt="" /> Cart <span>(0)</span></a>
+                <a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt="" /> Favourite</a>
+                <a href="#" class="search-nav"><img src="img/core-img/search.png" alt="" /> Search</a>
             </div>
             <!-- Social Button -->
             <div class="social-info d-flex justify-content-between">
@@ -117,11 +109,10 @@
         <!-- Product Catagories Area Start -->
         <div class="products-catagories-area clearfix">
             <div class="amado-pro-catagory clearfix">
-
                 <!-- Single Catagory -->
                 <div class="single-products-catagory clearfix">
                     <a href="product-details.html">
-                        <img src="productimages/1.webp" alt="" class="product-image">
+                        <img src="productimages/1.webp" alt="" class="product-image" />
                         <!-- Hover Content -->
                         <div class="hover-content">
                             <div class="line"></div>
@@ -132,25 +123,11 @@
                 </div>
 
                 <!-- Single Catagory -->
-                
 
                 <!-- Single Catagory -->
                 <div class="single-products-catagory clearfix">
                     <a href="product-details.html">
-                        <img src="productimages/2.webp" alt="" class="product-image">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $180</p>
-                            <h4>Cool Shades</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="product-details.html">
-                        <img src="productimages/3.webp" alt="" class="product-image">
+                        <img src="productimages/2.webp" alt="" class="product-image" />
                         <!-- Hover Content -->
                         <div class="hover-content">
                             <div class="line"></div>
@@ -163,7 +140,20 @@
                 <!-- Single Catagory -->
                 <div class="single-products-catagory clearfix">
                     <a href="product-details.html">
-                        <img src="productimages/4.webp" alt="" class="product-image">
+                        <img src="productimages/3.webp" alt="" class="product-image" />
+                        <!-- Hover Content -->
+                        <div class="hover-content">
+                            <div class="line"></div>
+                            <p>From $180</p>
+                            <h4>Cool Shades</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Single Catagory -->
+                <div class="single-products-catagory clearfix">
+                    <a href="product-details.html">
+                        <img src="productimages/4.webp" alt="" class="product-image" />
                         <!-- Hover Content -->
                         <div class="hover-content">
                             <div class="line"></div>
@@ -176,7 +166,7 @@
                 <!-- Single Catagory -->
                 <div class="single-products-catagory clearfix">
                     <a href="product-details.html">
-                        <img src="productimages/5.webp" alt="" class="product-image">
+                        <img src="productimages/5.webp" alt="" class="product-image" />
                         <!-- Hover Content -->
                         <div class="hover-content">
                             <div class="line"></div>
@@ -186,12 +176,10 @@
                     </a>
                 </div>
 
-      
-
                 <!-- Single Catagory -->
                 <div class="single-products-catagory clearfix">
                     <a href="product-details.html">
-                        <img src="productimages/6.webp" alt="" class="product-image">
+                        <img src="productimages/6.webp" alt="" class="product-image" />
                         <!-- Hover Content -->
                         <div class="hover-content">
                             <div class="line"></div>
@@ -200,14 +188,11 @@
                         </div>
                     </a>
                 </div>
-
-           
             </div>
         </div>
         <!-- Product Catagories Area End -->
     </div>
     <!-- ##### Main Content Wrapper End ##### -->
-
 
     <!-- ##### Newsletter Area End ##### -->
 
@@ -220,9 +205,8 @@
                     <div class="single_widget_area">
                         <!-- Logo -->
                         <div class="footer-logo mr-50">
-                            <a href="index.html"><img src="img/core-img/logo.png"  alt=""></a>
+                            <a href="index.html"><img src="img/core-img/logo.png" alt="" /></a>
                         </div>
-                        
                     </div>
                 </div>
                 <!-- Single Widget Area -->
@@ -231,13 +215,15 @@
                         <!-- Footer Menu -->
                         <div class="footer_menu">
                             <nav class="navbar navbar-expand-lg justify-content-end">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                  </button>
                                 <div class="collapse navbar-collapse" id="footerNavContent">
                                     <ul class="navbar-nav ml-auto">
                                         <li class="nav-item active">
                                             <a class="nav-link" href="index.html">Home</a>
                                         </li>
-                                        
+
                                         <li class="nav-item">
                                             <a class="nav-link" href="cart.html">Cart</a>
                                         </li>
@@ -245,7 +231,9 @@
                                             <a class="nav-link" href="checkout.html">Checkout</a>
                                         </li>
                                         <li class="nav-item">
-                                            <p>Thanks for visiting the project Ararel made by Ayush</p>
+                                            <p>
+                                                Thanks for visiting our project Ararel made by Ayush and Ananya
+                                            </p>
                                         </li>
                                     </ul>
                                 </div>
@@ -268,31 +256,6 @@
     <script src="js/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
-
-    <script>
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        var firebaseConfig = {
-    apiKey: "AIzaSyBuR28WWVh5h55ZU-y0iC5QK6xh430Z9ts",
-    authDomain: "ararel-2da93.firebaseapp.com",
-    projectId: "ararel-2da93",
-    storageBucket: "ararel-2da93.appspot.com",
-    messagingSenderId: "518498586541",
-    appId: "1:518498586541:web:9b331794c32ac10dfc5b24",
-    measurementId: "G-MRMERN249J"
-  };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
-    <script src='default.js'></script>
-
 </body>
 
 </html>
